@@ -1,0 +1,339 @@
+@media (min-width: 320px) and (max-width: 420px) {
+    header {
+    font-size: xx-small;
+  }
+
+  .img-logo img {
+    width: 6rem;
+  }
+
+  .nav-page a {
+    padding: 0 0.2rem;
+  }
+
+  .fundo-img {
+    max-width: 100%;
+    max-height: 15rem;
+  }
+
+  .fundo-img img {
+    height: 20rem;
+  }
+
+  .container-buy-learn {
+    gap: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+
+  .btn-buy-game,
+  .btn-learn-more {
+    padding: 0.3rem 0.3rem;
+    text-transform: uppercase;
+    border: 0.06rem solid #fff;
+    font-size: xx-small;
+  }
+
+  .game-description {
+    width: 15rem;
+    font-size: xx-small;
+  }
+
+  .utf {
+    font-size: medium;
+    padding-top: 2rem;
+  }
+
+  .container-utf {
+    height: 18rem;
+    background-size: cover;
+  }
+
+  .under-the-face {
+    padding: 1rem 5rem;
+  }
+
+  .carousel {
+    max-height: 1rem;
+    padding: 0.1rem;
+    min-height: 9rem;
+  }
+
+  .slide {
+    padding: 0.1rem;
+  }
+
+  .slide h2 {
+    font-size: small;
+  }
+
+  .slide p {
+    font-size: x-small;
+  }
+
+  .navigation {
+    margin-top: 0.1rem;
+  }
+
+  .nav-btn {
+    border: solid 0.06rem #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    font-size: 1rem;
+  }
+
+  .indicator {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0 0.3rem;
+  }
+
+  .media h1 {
+    padding: 2rem;
+    font-size: medium;
+  }
+
+  .main-video iframe {
+    width: 20rem;
+    height: 12rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .about h1 {
+    font-size: medium;
+    padding: 2rem;
+  }
+
+  .about p {
+    width: 20rem;
+    padding-bottom: 2rem;
+    font-size: x-small;
+  }
+
+  .contact-media {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .media-social a img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .contact h1 {
+    font-size: medium;
+  }
+
+  .logo-nav .logo-footer img {
+    margin: -1rem;
+    width: 10rem;
+  }
+
+  .contain-nav {
+    padding-top: 3rem;
+  }
+
+  .nav-page-footer,
+  .nav-page-footer-two {
+    display: flex;
+    gap: 0.5rem;
+    font-size: x-small;
+  }
+
+  .email a {
+    padding: 1rem;
+    font-size: x-small;
+  }
+
+  .bottom-footer {
+    padding: 1rem;
+    font-size: x-small;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 430px) {
+  header {
+    font-size: x-small;
+  }
+
+  .img-logo img {
+    width: 8rem;
+  }
+
+  .nav-page a {
+    padding: 0 0.3rem;
+  }
+
+  .fundo-img {
+    max-width: 100%;
+    max-height: 15rem;
+  }
+
+  .fundo-img img {
+    height: 20rem;
+  }
+
+  .container-buy-learn {
+    gap: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+
+  .btn-buy-game,
+  .btn-learn-more {
+    padding: 0.3rem 0.3rem;
+    text-transform: uppercase;
+    border: 0.06rem solid #fff;
+    font-size: xx-small;
+  }
+
+  .game-description {
+    width: 15rem;
+    font-size: xx-small;
+  }
+
+  .utf {
+    font-size: medium;
+    padding-top: 2rem;
+  }
+
+  .container-utf {
+    height: 18rem;
+    background-size: cover;
+  }
+
+  .under-the-face {
+    padding: 1rem 5rem;
+  }
+
+  .carousel {
+    max-height: 1rem;
+    padding: 0.1rem;
+    min-height: 9rem;
+  }
+
+  .slide {
+    padding: 0.1rem;
+  }
+
+  .slide h2 {
+    font-size: small;
+  }
+
+  .slide p {
+    font-size: x-small;
+  }
+
+  .navigation {
+    margin-top: 0.1rem;
+  }
+
+  .nav-btn {
+    border: solid 0.06rem #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    font-size: 1rem;
+  }
+
+  .indicator {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0 0.3rem;
+  }
+
+  .media h1 {
+    padding: 2rem;
+    font-size: medium;
+  }
+
+  .main-video iframe {
+    width: 20rem;
+    height: 12rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .about h1 {
+    font-size: medium;
+    padding: 2rem;
+  }
+
+  .about p {
+    width: 20rem;
+    padding-bottom: 2rem;
+    font-size: x-small;
+  }
+
+  .contact-media {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .media-social a img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .contact h1 {
+    font-size: medium;
+  }
+
+  .logo-nav .logo-footer img {
+    margin: -1rem;
+    width: 10rem;
+  }
+
+  .contain-nav {
+    padding-top: 3rem;
+  }
+
+  .nav-page-footer,
+  .nav-page-footer-two {
+    display: flex;
+    gap: 0.5rem;
+    font-size: x-small;
+  }
+
+  .email a {
+    padding: 1rem;
+    font-size: x-small;
+  }
+
+  .bottom-footer {
+    padding: 1rem;
+    font-size: x-small;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 768px) {
+
+  header {
+    font-size: medium;
+  }
+
+  .nav-page a {
+    padding: 0 0.5rem;
+  }
+
+  .container-utf {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1120px) {
+
+  .nav-page a {
+    padding: 0 0.6rem;
+  }
+
+  .container-utf {
+    background-size: cover;
+  }
+}
