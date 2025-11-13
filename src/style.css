@@ -1,7 +1,16 @@
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
 header {
-  font-size: larger;
-  max-width: 95%;
-  max-height: 12rem;
+  font-size: clamp(0.75rem, 1.2vw, 1.2rem);
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 3vw, 3rem);
+  position: relative;
+  z-index: 1;
 }
 
 .content-header {
@@ -11,7 +20,7 @@ header {
 }
 
 .img-logo img {
-  width: 20rem;
+  width: clamp(15rem, 30vw, 20rem);
   height: auto;
 }
 
@@ -20,8 +29,9 @@ header {
 }
 
 .nav-page a {
-  padding: 0 1.5rem;
+  padding: 0 clamp(0.5rem, 1.2vw, 1.5rem);
   color: #9c9c9c;
+  font-size: clamp(0.85rem, 1.15vw, 1.15rem);
 }
 
 .nav-page a:hover {
@@ -33,35 +43,58 @@ header {
 
 .fundo-img {
   max-width: 100%;
-  max-height: 50rem;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .fundo-img img {
   content: "";
   position: absolute;
-  top: 0;
+  top: calc(-35% + 10px);
   left: 0;
   width: 100%;
-  height: 55rem;
+  height: clamp(40rem, 60vw, 70rem);
   z-index: -1;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .container-buy-learn {
   display: flex;
   justify-content: flex-end;
-  padding-right: 8rem;
   align-items: center;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+  padding-top: clamp(8rem, 12vw, 15rem);
+  padding-bottom: clamp(8rem, 12vw, 15rem);
+  padding-right: clamp(2rem, 6vw, 8rem);
+  position: relative;
+  z-index: 1;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container-buy-learn .text-ex {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.text-ex p {
+  position: relative;
+  font-family: 'Cinzel';
+  font-weight: 600;
+  font-size: large;
+  right: 4rem;
+  bottom: 1rem;
 }
 
 .btn-buy-game {
   color: #fff;
-  padding: 1rem 2.7rem;
+  padding: clamp(0.6rem, 1.2vw, 1.2rem) clamp(1.8rem, 2.5vw, 3rem);
   text-transform: uppercase;
-  border: 0.1rem solid #fff;
+  border: 0.2rem solid #fff;
   border-radius: 10rem;
   cursor: pointer;
+  font-size: clamp(0.8rem, 1.1vw, 1.1rem);
 }
 
 .btn-buy-game:hover,
@@ -74,26 +107,33 @@ header {
 .text-box {
   display: flex;
   justify-content: center;
+  padding-top: clamp(5rem, 5vw, 1rem);
+  position: relative;
+  z-index: 1;
 }
 
 .game-description {
   text-align: center;
-  width: 30rem;
-  font-size: larger;
+  width: clamp(18rem, 40vw, 30rem);
+  font-size: clamp(0.85rem, 1.2vw, 1.2rem);
   color: #fff;
-  padding-bottom: 5rem;
+  padding-bottom: clamp(3rem, 5vw, 5rem);
 }
 
 .media {
   background-color: #141414;
   color: #fff;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .media h1 {
   display: flex;
   justify-content: center;
-  font-size: x-large;
-  padding: 3rem;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  padding: clamp(2rem, 3vw, 3rem);
 }
 
 .main-video {
@@ -103,13 +143,13 @@ header {
 
 .main-video iframe {
   background-size: cover;
-  width: 50rem;
-  height: 30rem;
+  width: clamp(20rem, 45vw, 50rem);
+  height: clamp(12rem, 28vw, 30rem);
 }
 
 .container {
   position: relative;
-  padding: 15px;
+  padding: clamp(0.8rem, 1.2vw, 15px);
   max-width: 100rem;
   margin: 0 auto;
 }
@@ -121,9 +161,9 @@ header {
   left: 0;
   right: auto;
   bottom: 0;
-  font-size: 20px;
+  font-size: clamp(1rem, 1.5vw, 20px);
   line-height: 250px;
-  width: 40px;
+  width: clamp(30px, 3vw, 40px);
   color: #fff;
   transition: all 600ms ease-in-out;
   background: linear-gradient(to left, transparent 0%, black 200%);
@@ -146,12 +186,12 @@ header {
 .img-carrossel {
   display: flex;
   flex-flow: row nowrap;
-  gap: 15px;
+  gap: clamp(8px, 1vw, 15px);
 }
 
 .item {
-  width: 25rem;
-  height: 15rem;
+  width: clamp(15rem, 22vw, 25rem);
+  height: clamp(9rem, 13vw, 15rem);
   flex-shrink: 0;
   transition: all 600ms ease-in-out;
   opacity: 0.5;
@@ -163,8 +203,8 @@ header {
 }
 
 .screenshots {
-  padding-bottom: 1rem;
-  padding: 1.5rem;
+  padding-bottom: clamp(0.5rem, 1vw, 1rem);
+  padding: clamp(1rem, 1.2vw, 1.5rem);
   overflow-x: hidden;
 }
 
@@ -211,13 +251,13 @@ header {
   position: absolute;
   top: 10px;  
   right: 10px;
-  background-color: #797979;
+  background-color: #202020;
   color: #fff;
   border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 30%;
-  font-size: 20px;
+  width: clamp(30px, 3vw, 50px);
+  height: clamp(30px, 3vw, 40px);
+  border-radius: 10%;
+  font-size: clamp(1rem, 1.5vw, 20px);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -227,7 +267,7 @@ header {
 }
 
 .popup-close:hover {
-  background-color: #9c9c9c;
+  background-color: #202020ce;
   transform: scale(1.1);
 }
 
@@ -243,7 +283,9 @@ header {
 .about {
   background-color: #f2f2f2;
   color: #141414;
-  padding: 3rem 0;
+  padding: clamp(2rem, 3vw, 3rem) 0;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .about .text-about {
@@ -254,51 +296,63 @@ header {
 .about h1 {
   display: flex;
   justify-content: center;
-  font-size: xx-large;
-  padding: 3rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  padding: clamp(2rem, 3vw, 3rem);
 }
 
 .about p {
-  width: 50rem;
-  padding-bottom: 5rem;
+  width: clamp(20rem, 60vw, 50rem);
+  padding-bottom: clamp(3rem, 5vw, 5rem);
   text-align: center;
-  font-size: larger;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
 }
 
 footer {
   background-color: #141414;
+  margin: 0 auto;
+  padding: 0 clamp(2rem, 3vw, 3rem);
+  max-width: 1920px;
 }
 
 .contact-media {
   display: flex;
   justify-content: space-between;
-  padding: 3rem;
+  padding: clamp(2rem, 3vw, 3rem) 0;
+  margin: 0;
 }
 
 .contact h1 {
   color: #fff;
-  font-size: xx-large;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.media-social a img {
+  width: clamp(2rem, 4vw, 3.75rem);
+  height: clamp(2rem, 4vw, 3.75rem);
 }
 
 .logo-nav {
   display: flex;
   justify-content: space-between;
-  max-width: 96%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .logo-nav .logo-footer img {
-  margin: -2rem;
-  width: 23rem;
+  margin: clamp(-1rem, -2vw, -2rem);
+  width: clamp(12rem, 18vw, 23rem);
 }
 
 .contain-nav {
-  padding-top: 6rem;
+  padding-top: clamp(3rem, 5vw, 6rem);
 }
 
 .nav-page-footer,
 .nav-page-footer-two {
   display: flex;
-  gap: 1rem;
+  gap: clamp(0.5rem, 1vw, 1rem);
+  font-size: clamp(0.8rem, 1.05vw, 1.05rem);
 }
 
 .nav-page-footer a,
@@ -308,18 +362,42 @@ footer {
   color: #fff;
 }
 
-.email a{
+.email {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.3rem, 0.6vw, 0.6rem);
+  padding: clamp(1rem, 2vw, 3rem) 0;
+  margin: 0;
+}
+
+.email .email-logo {
+  width: clamp(2rem, 4vw, 2rem);
+  height: auto;
+  margin-right: clamp(0.2rem, 0.5vw, 0.2rem);
+}
+
+.email a {
   color: #fff;
-  padding: 3rem;
+  font-size: clamp(0.8rem, 1.05vw, 1.05rem);
 }
 
 .bottom-footer {
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
+    align-items: center;
+    padding: clamp(2rem, 3vw, 3rem) 0;
     color: #fff;
+    font-size: clamp(0.75rem, 0.95vw, 1.05rem);
+    margin: 0;
+}
+
+.bottom-footer p {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
 }
 
 .bottom-footer .considerations a {
     color: #ff4444;
+    line-height: 1;
 }
