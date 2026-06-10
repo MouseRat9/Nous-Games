@@ -59,6 +59,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .fundo-img img {
@@ -73,21 +74,35 @@ header {
   object-position: center top;
 }
 
+/* Wrapper que posiciona tudo à direita sobre a imagem */
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: clamp(26rem, 40vw, 38rem);
+  padding-right: calc(clamp(2rem, 5vw, 6rem) + 70px);
+  padding-bottom: calc(clamp(2rem, 4vw, 4rem) + 50px);
+  position: relative;
+  z-index: 1;
+  gap: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.game-description {
+  text-align: center;
+  width: 100%;
+  max-width: clamp(22rem, 34vw, 32rem);
+  font-size: clamp(0.85rem, 1.2vw, 1.2rem);
+  color: #fff;
+  margin-top: 0;
+  font-style: italic;
+}
+
 .container-buy-learn {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: clamp(1rem, 2vw, 1.5rem);
-  padding-left: clamp(1rem, 3vw, 3rem);
-  padding-right: clamp(1rem, 3vw, 3rem);
-  position: relative;
-  z-index: 1;
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  margin-top: 150px;
+  gap: clamp(0.6rem, 1vw, 1rem);
 }
 
 .container-buy-learn .text-ex {
@@ -95,7 +110,6 @@ header {
   color: #fff;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .text-ex p {
@@ -129,21 +143,6 @@ header {
 .text-box {
   display: flex;
   justify-content: center;
-  padding-top: 0;
-  position: relative;
-  z-index: 1;
-}
-
-.game-description {
-  text-align: center;
-  width: clamp(18rem, 40vw, 30rem);
-  font-size: clamp(0.85rem, 1.2vw, 1.2rem);
-  color: #fff;
-  padding-bottom: 200px;
-  margin-top: 0;
-  position: relative;
-  top: 100px;
-  font-style: italic;
 }
 
 .media {
