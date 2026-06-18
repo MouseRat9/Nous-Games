@@ -26,40 +26,46 @@ controls.forEach((control) => {
     items[currentItem].scrollIntoView({
       behavior: "smooth",
       inline: "center",
-      block: "nearest"
+      block: "nearest",
     });
 
     items[currentItem].classList.add("current-item");
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const slides = document.querySelectorAll('.slide');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  const indicators = document.querySelectorAll('.indicator');
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".slide");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const indicators = document.querySelectorAll(".indicator");
   let currentSlide = 0;
 
   function showSlide(index) {
-    slides.forEach(slide => {
-      slide.classList.remove('active');
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
     });
 
-    indicators.forEach(indicator => {
-      indicator.classList.remove('active');
+    indicators.forEach((indicator) => {
+      indicator.classList.remove("active");
     });
 
-    document.documentElement.classList.remove('slide1-bg', 'slide2-bg', 'slide3-bg', 'slide4-bg', 'slide5-bg');
+    document.documentElement.classList.remove(
+      "slide1-bg",
+      "slide2-bg",
+      "slide3-bg",
+      "slide4-bg",
+      "slide5-bg",
+    );
 
-    slides[index].classList.add('active');
-    indicators[index].classList.add('active');
+    slides[index].classList.add("active");
+    indicators[index].classList.add("active");
 
     document.documentElement.classList.add(`slide${index + 1}-bg`);
 
     currentSlide = index;
   }
 
-  prevBtn.addEventListener('click', function () {
+  prevBtn.addEventListener("click", function () {
     let newIndex = currentSlide - 1;
     if (newIndex < 0) {
       newIndex = slides.length - 1;
@@ -67,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
     showSlide(newIndex);
   });
 
-  nextBtn.addEventListener('click', function () {
+  nextBtn.addEventListener("click", function () {
     let newIndex = currentSlide + 1;
     if (newIndex >= slides.length) {
       newIndex = 0;
@@ -76,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   indicators.forEach((indicator, index) => {
-    indicator.addEventListener('click', function () {
+    indicator.addEventListener("click", function () {
       showSlide(index);
     });
   });
@@ -84,12 +90,11 @@ document.addEventListener('DOMContentLoaded', function () {
   showSlide(0);
 });
 
-
-const carousel = document.getElementById('carousel');
-const images = document.querySelectorAll('.item');
-const popupOverlay = document.getElementById('popupOverlay');
-const popupImage = document.getElementById('popupImage');
-const popupClose = document.getElementById('popupClose');
+const carousel = document.getElementById("carousel");
+const images = document.querySelectorAll(".item");
+const popupOverlay = document.getElementById("popupOverlay");
+const popupImage = document.getElementById("popupImage");
+const popupClose = document.getElementById("popupClose");
 
 let currentIndex = 0;
 const totalImages = images.length;
@@ -98,36 +103,53 @@ function updateCarousel() {
   const translateX = -currentIndex * (100 / totalImages);
   carousel.style.transform = `translateX(${translateX}%)`;
 
-  rightArrow.addEventListener('click', () => {
+  rightArrow.addEventListener("click", () => {
     currentIndex = currentIndex < totalImages - 1 ? currentIndex + 1 : 0;
     updateCarousel();
   });
-};
+}
 
 images.forEach((image) => {
-  image.addEventListener('click', () => {
+  image.addEventListener("click", () => {
     popupImage.src = image.src;
     popupImage.alt = image.alt;
-    popupOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
+    popupOverlay.classList.add("active");
+    document.body.style.overflow = "hidden";
   });
 });
 
 function closePopup() {
-  popupOverlay.classList.remove('active');
-  document.body.style.overflow = 'auto';
+  popupOverlay.classList.remove("active");
+  document.body.style.overflow = "auto";
 }
 
-popupClose.addEventListener('click', closePopup);
+popupClose.addEventListener("click", closePopup);
 
-popupOverlay.addEventListener('click', (e) => {
+popupOverlay.addEventListener("click", (e) => {
   if (e.target === popupOverlay) {
     closePopup();
   }
 });
 
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && popupOverlay.classList.contains('active')) {
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && popupOverlay.classList.contains("active")) {
     closePopup();
   }
 });
+
+(function () {
+  const releaseDate = new Date("2026-06-18T00:00:00");
+
+  if (new Date() >= releaseDate) {
+    const releaseText = document.getElementById("release-text");
+    const buyButton = document.getElementById("buy-button");
+
+    if (releaseText) {
+      releaseText.remove();
+    }
+
+    if (buyButton) {
+      buyButton.textContent = "GET NOW";
+    }
+  }
+})();
